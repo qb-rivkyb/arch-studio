@@ -4,6 +4,16 @@ export default function Portfolio() {
   return (
     <Layout>
       <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
+      <div>Portfolio grid</div>
     </Layout>
   );
 }
