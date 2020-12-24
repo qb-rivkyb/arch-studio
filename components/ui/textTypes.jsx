@@ -25,23 +25,4 @@ const LargeGreyText = ({ children }) => (
   <div css={{ fontSize: "200px", color: colors.veryLightGrey }}>{children}</div>
 );
 
-function LinkText({ children, className }) {
-  return (
-    <div
-      css={{
-        fontSize: "15px",
-        color: colors.mediumGrey,
-        fontWeight: "bold",
-        cursor: "pointer",
-        lineHeight: "25px",
-        ":hover": {
-          color: colors.darkBlue,
-        },
-      }}
-      className={className}
-    >
-      {children}
-    </div>
-  );
-}
-export { H1, H2, H3, LargeGreyText, LinkText };
+export { H1, H2, H3, LargeGreyText };

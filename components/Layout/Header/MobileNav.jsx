@@ -1,20 +1,19 @@
-import Link from "../../ui/Link";
-import { LinkText } from "../../ui/textTypes";
+import { NavLink } from "./index";
 import * as s from "./header.styl.js";
 
 export default function MobileNav() {
   return (
     <>
       <div css={s.navItemsMobile}>
-        <Link href="/portfolio">
-          <LinkText css={s.navItemMobile}>Portfolio</LinkText>
-        </Link>
-        <Link href="/about">
-          <LinkText css={s.navItemMobile}>About Us</LinkText>
-        </Link>
-        <Link href="/contact">
-          <LinkText css={s.navItemMobile}>Contact</LinkText>
-        </Link>
+        <NavLink href="/portfolio" css={s.navItemMobile}>
+          Portfolio
+        </NavLink>
+        <NavLink href="/about" css={s.navItemMobile}>
+          About Us
+        </NavLink>
+        <NavLink href="/contact" css={s.navItemMobile}>
+          Contact
+        </NavLink>
       </div>
     </>
   );

@@ -1,16 +1,13 @@
 import { useState } from "react";
-import Link from "../../ui/Link";
 import Image from "next/image";
-import { useRouter } from "next/router";
-import { LinkText } from "../../ui/textTypes";
+import { ClassNames } from "@emotion/react";
+import NextLink from "next/link";
+
+import Link from "../../ui/Link";
 import * as s from "./header.styl.js";
 import MobileNav from "./MobileNav";
-import colors from "../../../colors";
-import { ClassNames } from "@emotion/react";
 
 export default function Header() {
-  const router = useRouter();
-
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const handleToggle = () => {
@@ -20,9 +17,11 @@ export default function Header() {
   return (
     <>
       <div css={s.navigation}>
-        <Link href="/" css={s.logo}>
-          <Image src="/logo.svg" alt="logo" width="97" height="40" />
-        </Link>
+        <NextLink href="/">
+          <a css={s.logo}>
+            <Image src="/logo.svg" alt="logo" width="97" height="40" />
+          </a>
+        </NextLink>
         <div
           onClick={handleToggle}
           css={{ "@media (min-width: 425px)": { display: "none" } }}
@@ -58,21 +57,7 @@ export function NavLink({ href, children }) {
   return (
     <ClassNames>
       {({ css }) => (
-        <Link
-          href={href}
-          css={{
-            display: "block",
-            fontSize: "15px",
-            color: colors.mediumGrey,
-            fontWeight: "bold",
-            cursor: "pointer",
-            lineHeight: "25px",
-            ":hover": {
-              color: colors.darkBlue,
-            },
-          }}
-          activeClassName={css(s.linkActiveStyles)}
-        >
+        <Link href={href} activeClassName={css(s.linkActiveStyles)}>
           {children}
         </Link>
       )}
