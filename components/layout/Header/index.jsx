@@ -9,10 +9,8 @@ export default function Header() {
   return (
     <>
       <div css={s.navigation}>
-        <Link href="/">
-          <span css={s.logo}>
-            <Image src="/logo.svg" alt="logo" width="97" height="40" />
-          </span>
+        <Link href="/" css={s.logo}>
+          <Image src="/logo.svg" alt="logo" width="97" height="40" />
         </Link>
         <div css={s.navItems}>
           <Link href="/portfolio">
