@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <>
       <div css={s.navigation}>
-        <NextLink href="/">
+        <NextLink href="/" passHref>
           <a css={s.logo}>
             <Image src="/logo.svg" alt="logo" width="97" height="40" />
           </a>
