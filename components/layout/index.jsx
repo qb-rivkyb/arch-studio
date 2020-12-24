@@ -4,8 +4,10 @@ import Footer from "./Footer";
 export default function Layout({ children }) {
   return (
     <>
-      <Header />
-      {children}
+      <div css={{ maxWidth: "85%", margin: "0 auto" }}>
+        <Header />
+        {children}
+      </div>
       <Footer />
     </>
   );
