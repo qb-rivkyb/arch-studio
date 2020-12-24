@@ -7,6 +7,31 @@ export default function Contact() {
       <Layout>
         <SideText>Contact</SideText>
         <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
+        <div>overlapping hero</div>
         <div>contact details</div>
         <div>map</div>
         <div>contact form</div>
