@@ -1,6 +1,5 @@
-import Layout from "../components/Layout";
-import SideText from "../components/Layout/Header/SideText";
-import Head from "next/head";
+import Layout from "../components/test";
+import SideText from "../components/test/Header/SideText";
 
 export default function IndexPage() {
   return (
