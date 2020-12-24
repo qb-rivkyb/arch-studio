@@ -17,6 +17,13 @@ export default function Button({ children }) {
         padding: "24px 32px",
         fontWeight: "bold",
         letterSpacing: ".04em",
+        cursor: "pointer",
+        "&:hover": {
+          backgroundColor: colors.darkGrey,
+        },
+        "&:active": {
+          backgroundColor: colors.lightGrey,
+        },
       }}
     >
       {children}

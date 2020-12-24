@@ -1,4 +1,4 @@
-import React from "react";
+import colors from "../../colors";
 
 const H1 = ({ children }) => (
   <h1
@@ -22,22 +22,25 @@ const H3 = ({ children }) => (
 );
 
 const LargeGreyText = ({ children }) => (
-  <div css={{ fontSize: "200px", color: "#EEEFF4" }}>{children}</div>
+  <div css={{ fontSize: "200px", color: colors.veryLightGrey }}>{children}</div>
 );
 
-const LinkText = React.forwardRef(({ children, ...props }, ref) => (
-  <div
-    ref={ref}
-    css={{
-      fontSize: "15px",
-      color: "#7D828F",
-      fontWeight: "bold",
-      cursor: "pointer",
-      lineHeight: "25px",
-    }}
-    {...props}
-  >
-    {children}
-  </div>
-));
+function LinkText({ children }) {
+  return (
+    <div
+      css={{
+        fontSize: "15px",
+        color: colors.mediumGrey,
+        fontWeight: "bold",
+        cursor: "pointer",
+        lineHeight: "25px",
+        ":hover": {
+          color: colors.darkBlue,
+        },
+      }}
+    >
+      {children}
+    </div>
+  );
+}
 export { H1, H2, H3, LargeGreyText, LinkText };

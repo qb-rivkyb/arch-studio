@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "../../ui/Link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import * as s from "./header.styl.js";
