@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import { LinkText } from "../../ui/textTypes";
 import * as s from "./header.styl.js";
 import MobileNav from "./MobileNav";
+import colors from "../../../colors";
+import { ClassNames } from "@emotion/react";
 
 export default function Header() {
   const router = useRouter();
@@ -43,27 +45,37 @@ export default function Header() {
         </div>
         {toggleMenu && <MobileNav />}
         <div css={s.navItems}>
-          <Link href="/portfolio">
-            <LinkText
-              css={router.pathname === "/portfolio" && s.linkActiveStyles}
-            >
-              Portfolio
-            </LinkText>
-          </Link>
-          <Link href="/about">
-            <LinkText css={router.pathname === "/about" && s.linkActiveStyles}>
-              About Us
-            </LinkText>
-          </Link>
-          <Link href="/contact">
-            <LinkText
-              css={router.pathname === "/contact" && s.linkActiveStyles}
-            >
-              Contact
-            </LinkText>
-          </Link>
+          <NavLink href="/portfolio">Portfolio</NavLink>
+          <NavLink href="/about">About Us</NavLink>
+          <NavLink href="/contact">Contact</NavLink>
         </div>
       </div>
     </>
+  );
+}
+
+export function NavLink({ href, children }) {
+  return (
+    <ClassNames>
+      {({ css }) => (
+        <Link
+          href={href}
+          css={{
+            display: "block",
+            fontSize: "15px",
+            color: colors.mediumGrey,
+            fontWeight: "bold",
+            cursor: "pointer",
+            lineHeight: "25px",
+            ":hover": {
+              color: colors.darkBlue,
+            },
+          }}
+          activeClassName={css(s.linkActiveStyles)}
+        >
+          {children}
+        </Link>
+      )}
+    </ClassNames>
   );
 }
