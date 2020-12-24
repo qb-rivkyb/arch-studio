@@ -25,7 +25,7 @@ const LargeGreyText = ({ children }) => (
   <div css={{ fontSize: "200px", color: colors.veryLightGrey }}>{children}</div>
 );
 
-function LinkText({ children }) {
+function LinkText({ children, className }) {
   return (
     <div
       css={{
@@ -38,6 +38,7 @@ function LinkText({ children }) {
           color: colors.darkBlue,
         },
       }}
+      className={className}
     >
       {children}
     </div>

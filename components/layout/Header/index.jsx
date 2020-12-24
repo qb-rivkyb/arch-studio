@@ -15,30 +15,19 @@ export default function Header() {
         <div css={s.navItems}>
           <Link href="/portfolio">
             <LinkText
-              css={[
-                s.navItem,
-                router.pathname === "/portfolio" && s.linkActiveStyles,
-              ]}
+              css={router.pathname === "/portfolio" && s.linkActiveStyles}
             >
               Portfolio
             </LinkText>
           </Link>
           <Link href="/about">
-            <LinkText
-              css={[
-                s.navItem,
-                router.pathname === "/about" && s.linkActiveStyles,
-              ]}
-            >
+            <LinkText css={router.pathname === "/about" && s.linkActiveStyles}>
               About Us
             </LinkText>
           </Link>
           <Link href="/contact">
             <LinkText
-              css={[
-                s.navItem,
-                router.pathname === "/contact" && s.linkActiveStyles,
-              ]}
+              css={router.pathname === "/contact" && s.linkActiveStyles}
             >
               Contact
             </LinkText>
