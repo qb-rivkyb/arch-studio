@@ -1,15 +1,13 @@
 import colors from "../../../colors";
 
 export const container = {
-  background: colors.veryLightGrey,
-  // background: `linear-gradient(to top, ${colors.veryLightGrey} 0%,${colors.veryLightGrey} 80%,${colors.veryLightGrey} 50%,white 50%,white 100%)`,
+  background: `linear-gradient(to top, ${colors.veryLightGrey} 0%,${colors.veryLightGrey} 85%,${colors.veryLightGrey} 50%,white 50%,white 100%)`,
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  height: "383px",
+  height: "443px",
   justifyContent: "space-between",
   paddingBottom: "48px",
-  marginTop: "60px",
   "@media(min-width:768px)": {
     flexDirection: "row",
     height: "120px",
@@ -30,10 +28,6 @@ export const logoContainer = {
   width: "120px",
   display: "flex",
   justifyContent: "center",
-  marginTop: "-60px",
-  "@media(min-width:768px)": {
-    marginTop: 0,
-  },
   "@media(min-width:1100px)": {
     height: "200px",
     width: "200px",
