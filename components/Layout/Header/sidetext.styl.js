@@ -9,7 +9,6 @@ export const sideText = {
   color: `${colors.lightGrey}`,
   letterSpacing: "15px",
   fontSize: "15px",
-  textAlign: "center",
   top: "0",
   "&::before": {
     content: "'----'",
