@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "../../ui/Link";
-import Button from "../../ui/Button";
+import ArrowButton from "../../ui/ArrowButton";
 import * as s from "./footer.styl.js";
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
         <Link href="/contact">Contact</Link>
       </div>
       <Link css={s.button} href="/portfolio">
-        <Button>see our portfolio</Button>
+        <ArrowButton>see our portfolio</ArrowButton>
       </Link>
     </div>
   );
