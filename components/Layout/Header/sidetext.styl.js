@@ -18,7 +18,7 @@ export const sideText = {
   "@media (max-width: 768px)": {
     left: "39px",
   },
-  "@media (max-width: 425px)": {
+  "@media (max-width: 426px)": {
     display: "none",
   },
 };

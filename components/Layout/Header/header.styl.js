@@ -5,8 +5,7 @@ export const navigation = {
   padding: "56px 0",
   textAlign: "center",
   alignItems: "center",
-  zIndex: "99",
-  "@media (max-width: 425px)": {
+  "@media (max-width: 426px)": {
     paddingTop: "32px",
     justifyContent: "space-between",
   },
@@ -19,7 +18,7 @@ export const navItems = {
   display: "flex",
   justifyContent: "space-between",
   minWidth: "350px",
-  "@media (max-width: 425px)": {
+  "@media (max-width: 426px)": {
     display: "none",
   },
 };
@@ -49,11 +48,23 @@ export const navItemsMobile = {
   alignItems: "flex-start",
   paddingLeft: "48px",
   zIndex: "1000",
-  "@media (min-width: 425px)": {
+  "@media (min-width: 426px)": {
     display: "none",
   },
 };
 
 export const navItemMobile = {
   color: colors.darkBlue,
+};
+
+export const overlay = {
+  position: "absolute",
+  backgroundColor: "black",
+  opacity: 0.5,
+  left: 0,
+  bottom: 0,
+  top: "96px",
+  zIndex: 1,
+  width: "100%",
+  height: "100%",
 };

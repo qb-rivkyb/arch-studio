@@ -1,7 +1,7 @@
 import { NavLink } from "./index";
 import * as s from "./header.styl.js";
 
-export default function MobileNav() {
+export default function MobileNav({ onClick }) {
   return (
     <>
       <div css={s.navItemsMobile}>
@@ -15,6 +15,7 @@ export default function MobileNav() {
           Contact
         </NavLink>
       </div>
+      <div css={s.overlay} onClick={onClick}></div>
     </>
   );
 }

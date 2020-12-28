@@ -24,7 +24,7 @@ export default function Header() {
         </NextLink>
         <div
           onClick={handleToggle}
-          css={{ "@media (min-width: 425px)": { display: "none" } }}
+          css={{ "@media (min-width: 426px)": { display: "none" } }}
         >
           {toggleMenu ? (
             <Image
@@ -36,13 +36,13 @@ export default function Header() {
           ) : (
             <Image
               src="/icons/icon-hamburger.svg"
-              alt="burger"
+              alt="menu"
               width="24"
               height="17"
             />
           )}
         </div>
-        {toggleMenu && <MobileNav />}
+        {toggleMenu && <MobileNav onClick={handleToggle} />}
         <div css={s.navItems}>
           <NavLink href="/portfolio">Portfolio</NavLink>
           <NavLink href="/about">About Us</NavLink>
