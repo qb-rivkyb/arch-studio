@@ -67,4 +67,7 @@ export const overlay = {
   zIndex: 1,
   width: "100%",
   height: "100%",
+  "@media (min-width: 426px)": {
+    display: "none",
+  },
 };
