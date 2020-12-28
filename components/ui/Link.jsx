@@ -2,12 +2,13 @@ import NextLink from "next/link";
 import { useRouter } from "next/router";
 import colors from "../../colors";
 
-export default function Link({ href, children, activeClassName }) {
+export default function Link({ href, children, activeClassName, className }) {
   const router = useRouter();
   const isActive = router.pathname === href;
+  const classNames = isActive ? `${className} ${activeClassName}` : className;
 
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref>
       <a
         css={{
           textDecoration: "none",
@@ -15,13 +16,12 @@ export default function Link({ href, children, activeClassName }) {
           fontSize: "15px",
           color: colors.mediumGrey,
           fontWeight: "bold",
-          cursor: "pointer",
           lineHeight: "25px",
           ":hover": {
             color: colors.darkBlue,
           },
         }}
-        className={isActive && activeClassName}
+        className={classNames}
       >
         {children}
       </a>
