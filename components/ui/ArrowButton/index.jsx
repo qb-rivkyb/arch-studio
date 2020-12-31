@@ -3,7 +3,7 @@ import * as s from "./arrowButton.styl";
 
 export default function ArrowButton({ children }) {
   return (
-    <button css={s.button}>
+    <div css={s.button}>
       {children}
       <div css={{ marginLeft: "24px" }}>
         <Image
@@ -13,6 +13,6 @@ export default function ArrowButton({ children }) {
           height={18}
         />
       </div>
-    </button>
+    </div>
   );
 }
