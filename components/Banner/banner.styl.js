@@ -5,6 +5,11 @@ export const banner = {
   height: "720px",
   width: "100%",
   position: "relative",
+  display: "flex",
+  alignItems: "center",
+  "@media(max-width: 900px)": {
+    display: "none",
+  },
 };
 
 export const bannerButton = {
@@ -39,4 +44,9 @@ export const buttonContainer = {
   marginLeft: "-80px",
   position: "absolute",
   bottom: 0,
+};
+
+export const textContainer = {
+  maxWidth: "445px",
+  marginLeft: "190px",
 };
