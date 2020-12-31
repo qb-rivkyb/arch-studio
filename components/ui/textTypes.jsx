@@ -15,20 +15,26 @@ const H1 = ({ children, className }) => (
 );
 
 const H2 = ({ children, className }) => (
-  <h2 css={{ fontSize: "56px", lineHeight: "1em" }} className={className}>
+  <h2
+    css={{ fontSize: "56px", lineHeight: "1em", fontWeight: "700" }}
+    className={className}
+  >
     {children}
   </h2>
 );
 
 const H3 = ({ children, className }) => (
-  <h3 css={{ fontSize: "18px", lineHeight: "25px" }} className={className}>
+  <h3
+    css={{ fontSize: "18px", lineHeight: "25px", fontWeight: "700" }}
+    className={className}
+  >
     {children}
   </h3>
 );
 
 const LargeGreyText = ({ children, className }) => (
   <div
-    css={{ fontSize: "200px", color: colors.veryLightGrey }}
+    css={{ fontSize: "200px", color: colors.veryLightGrey, fontWeight: "700" }}
     className={className}
   >
     {children}
