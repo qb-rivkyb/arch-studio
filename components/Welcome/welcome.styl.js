@@ -30,6 +30,7 @@ export const welcomeContainer = {
     "@media(min-width:768px)": {
       display: "none",
     },
+    "@media (max-width: 426px)": { maxWidth: "100%" },
   },
 };
 
