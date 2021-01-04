@@ -16,7 +16,12 @@ const H1 = ({ children, className }) => (
 
 const H2 = ({ children, className }) => (
   <h2
-    css={{ fontSize: "56px", lineHeight: "1em", fontWeight: "700" }}
+    css={{
+      fontSize: "56px",
+      lineHeight: "1em",
+      fontWeight: "700",
+      "@media:(max-width: 425px)": { fontSize: "40px" },
+    }}
     className={className}
   >
     {children}
@@ -34,7 +39,14 @@ const H3 = ({ children, className }) => (
 
 const LargeGreyText = ({ children, className }) => (
   <div
-    css={{ fontSize: "200px", color: colors.veryLightGrey, fontWeight: "700" }}
+    css={{
+      fontSize: "200px",
+      color: colors.veryLightGrey,
+      fontWeight: "700",
+      "@media(max-width:1100px)": {
+        fontSize: "120px",
+      },
+    }}
     className={className}
   >
     {children}
