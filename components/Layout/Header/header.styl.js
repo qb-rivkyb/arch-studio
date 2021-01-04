@@ -8,6 +8,7 @@ export const navigation = {
   "@media (max-width: 426px)": {
     paddingTop: "32px",
     justifyContent: "space-between",
+    margin: "0 32px",
   },
 };
 export const logo = {
