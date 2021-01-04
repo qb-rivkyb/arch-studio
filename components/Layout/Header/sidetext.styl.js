@@ -6,7 +6,7 @@ export const sideText = {
   position: "absolute",
   left: "64px",
   textTransform: "uppercase",
-  color: `${colors.lightGrey}`,
+  color: colors.lightGrey,
   letterSpacing: "15px",
   fontSize: "15px",
   top: "0",
