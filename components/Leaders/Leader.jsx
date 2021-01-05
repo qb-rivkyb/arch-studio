@@ -5,8 +5,14 @@ import * as s from "./leaders.styl";
 export default function Leader({ imageUrl, name, title }) {
   return (
     <div css={s.leaderContainer}>
-      <div>
+      <div css={s.overlayHover}>
         <Image src={imageUrl} height="320" width="350" alt="leader-image" />
+        <div css={s.overlay} className="overlay">
+          <div css={s.socialImages}>
+            <Image src="/icons/icon-linkedin.svg" height="32" width="32" />
+            <Image src="/icons/icon-twitter.svg" height="32" width="32" />
+          </div>
+        </div>
       </div>
       <H3 css={{ margin: "24px 0 0" }}>{name}</H3>
       <P css={s.titleText}>{title}</P>

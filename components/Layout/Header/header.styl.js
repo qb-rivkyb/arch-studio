@@ -2,7 +2,7 @@ import colors from "../../../colors";
 
 export const navigation = {
   display: "flex",
-  padding: "56px 0",
+  padding: "32px 0",
   textAlign: "center",
   alignItems: "center",
   "@media (max-width: 426px)": {

@@ -38,3 +38,32 @@ export const headerText = {
   display: "inline-block",
   marginTop: 0,
 };
+
+export const overlayHover = {
+  position: "relative",
+  cursor: "pointer",
+  "&:hover .overlay": {
+    opacity: "0.6",
+  },
+};
+
+export const overlay = {
+  position: "absolute",
+  opacity: 0,
+  backgroundColor: "white",
+  transition: "0.4s ease-out",
+  top: 0,
+  bottom: 0,
+  right: 0,
+  left: 0,
+  color: "white",
+  margin: "0 auto",
+};
+
+export const socialImages = {
+  textAlign: "center",
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translateX(-50%) translateY(-50%)",
+};
