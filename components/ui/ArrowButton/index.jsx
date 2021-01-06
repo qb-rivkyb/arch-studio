@@ -8,7 +8,7 @@ export default function ArrowButton({ children }) {
       <div css={{ marginLeft: "24px" }}>
         <Image
           src="/icons/icon-arrow-white.svg"
-          alt="Picture of the author"
+          alt="icon arrow"
           width={24}
           height={18}
         />

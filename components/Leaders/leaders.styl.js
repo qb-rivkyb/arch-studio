@@ -42,22 +42,23 @@ export const headerText = {
 export const overlayHover = {
   position: "relative",
   cursor: "pointer",
-  "&:hover .overlay": {
-    opacity: "0.6",
+  maxHeight: "320px",
+  "@media (min-width: 1100px)": {
+    "&:hover > div": {
+      opacity: "0.5",
+    },
   },
 };
 
 export const overlay = {
   position: "absolute",
   opacity: 0,
-  backgroundColor: "white",
+  backgroundColor: "black",
   transition: "0.4s ease-out",
   top: 0,
   bottom: 0,
   right: 0,
   left: 0,
-  color: "white",
-  margin: "0 auto",
 };
 
 export const socialImages = {

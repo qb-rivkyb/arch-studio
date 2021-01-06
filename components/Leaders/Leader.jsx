@@ -7,10 +7,16 @@ export default function Leader({ imageUrl, name, title }) {
     <div css={s.leaderContainer}>
       <div css={s.overlayHover}>
         <Image src={imageUrl} height="320" width="350" alt="leader-image" />
-        <div css={s.overlay} className="overlay">
+        <div css={s.overlay}>
           <div css={s.socialImages}>
-            <Image src="/icons/icon-linkedin.svg" height="32" width="32" />
-            <Image src="/icons/icon-twitter.svg" height="32" width="32" />
+            <span css={{ marginRight: "32px" }}>
+              <Image
+                src="/icons/icon-linkedin-white.svg"
+                height="32"
+                width="32"
+              />
+            </span>
+            <Image src="/icons/icon-twitter-white.svg" height="32" width="32" />
           </div>
         </div>
       </div>

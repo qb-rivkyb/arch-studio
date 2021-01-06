@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import SideText from "../components/Layout/Header/SideText";
 import Leaders from "../components/Leaders";
+import OurHeritage from "../components/OurHeritage";
 import OverlappingHero from "../components/OverlappingHero";
 
 export default function AboutPage() {
@@ -27,7 +28,7 @@ export default function AboutPage() {
           paragraphText="Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings."
         />
       </div>
-      <div>flexbox with our heritage</div>
+      <OurHeritage />
       <Leaders />
     </Layout>
   );
