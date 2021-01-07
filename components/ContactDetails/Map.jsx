@@ -25,7 +25,7 @@ export default function Map({ latitude, longitude }) {
         latitude={latitude}
         longitude={longitude}
         offsetLeft={-20}
-        offsetTop={-10}
+        offsetTop={-50}
       >
         <Image
           src="/icons/map-marker.svg"

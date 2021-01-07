@@ -15,9 +15,6 @@ export const sideText = {
     textDecoration: "line-through",
     paddingRight: "48px",
   },
-  "@media (max-width: 768px)": {
-    left: "39px",
-  },
   "@media (max-width: 426px)": {
     display: "none",
   },

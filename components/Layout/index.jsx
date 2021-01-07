@@ -6,8 +6,9 @@ export default function Layout({ children }) {
     <>
       <div
         css={{
-          maxWidth: "85%",
+          maxWidth: "1440px",
           margin: "0 auto",
+          position: "relative",
           "@media (max-width: 426px)": { maxWidth: "100%" },
         }}
       >

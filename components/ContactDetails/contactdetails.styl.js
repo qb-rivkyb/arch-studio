@@ -11,11 +11,10 @@ export const contactContainer = {
 };
 
 export const contactDetailsContainer = {
-  margin: "200px 0",
+  margin: "200px auto",
   "@media (max-width: 426px)": {
     maxWidth: "85%",
-    margin: "0 auto",
-    margin: "72px 0",
+    margin: "72px auto",
   },
   "@media (min-width: 900px)": {
     display: "flex",
@@ -53,6 +52,7 @@ export const viewMapButton = {
 
 export const viewMapText = {
   marginRight: "24px",
+  borderBottom: "1px solid transparent",
   "@media (min-width: 900px)": {
     "&:hover": {
       borderBottom: `1px solid ${colors.darkBlue}`,
