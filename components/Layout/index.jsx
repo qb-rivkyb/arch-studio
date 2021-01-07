@@ -9,7 +9,8 @@ export default function Layout({ children }) {
           maxWidth: "1440px",
           margin: "0 auto",
           position: "relative",
-          "@media (max-width: 426px)": { maxWidth: "100%" },
+          "@media (min-width: 768px)": { padding: "0 100px" },
+          "@media (min-width: 1100px)": { padding: "0 165px" },
         }}
       >
         <Header />

@@ -2,13 +2,17 @@ import colors from "../../../colors";
 
 export const navigation = {
   display: "flex",
-  padding: "32px 165px",
+  paddingTop: "56px",
+  paddingBottom: "56px",
   textAlign: "center",
   alignItems: "center",
+  position: "relative",
+  zIndex: 1000,
   "@media (max-width: 426px)": {
-    paddingTop: "32px",
+    padding: "32px",
     justifyContent: "space-between",
-    margin: "0 32px",
+    position: "relative",
+    zIndex: 1000,
   },
 };
 export const logo = {
@@ -39,7 +43,7 @@ export const linkActiveStyles = {
 export const navItemsMobile = {
   backgroundColor: colors.veryLightGrey,
   position: "absolute",
-  top: "96px",
+  top: "108px",
   width: "343px",
   height: "235px",
   right: 0,
@@ -59,12 +63,13 @@ export const navItemMobile = {
 };
 
 export const overlay = {
-  position: "absolute",
+  position: "fixed",
   backgroundColor: "black",
   opacity: 0.5,
   left: 0,
   bottom: 0,
-  top: "96px",
+  top: 0,
+  right: 0,
   zIndex: 1,
   width: "100%",
   height: "100%",

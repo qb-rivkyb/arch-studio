@@ -19,7 +19,7 @@ export const subHeaderText = {
 };
 
 export const welcomeContainer = {
-  margin: "75px auto",
+  margin: "75px 32px",
   position: "relative",
   "&::before": {
     content: '""',
@@ -30,7 +30,9 @@ export const welcomeContainer = {
     "@media(min-width:768px)": {
       display: "none",
     },
-    "@media (max-width: 426px)": { maxWidth: "100%" },
+  },
+  "@media(min-width:768px)": {
+    margin: "75px 0",
   },
 };
 

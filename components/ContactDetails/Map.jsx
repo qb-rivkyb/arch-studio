@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Map({ latitude, longitude }) {
   const [viewport, setViewport] = useState({
     width: "100%",
-    height: "100%",
+    height: "500px",
     latitude,
     longitude,
     zoom: 7,
