@@ -19,7 +19,7 @@ export const container = {
   "@media(min-width:1200px)": {
     maxWidth: "1440px",
     padding: "0 165px",
-    margin: "0 auto",
+    margin: "200px auto 0",
     background: `linear-gradient(to right, ${colors.veryLightGrey} 0%,${colors.veryLightGrey} 90%,${colors.veryLightGrey} 50%,white 50%,white 100%) no-repeat`,
     backgroundOrigin: "content-box",
     height: "200px",
