@@ -11,9 +11,11 @@
     "@babel/core": "^7.12.10",
     "@emotion/babel-preset-css-prop": "^11.0.0",
     "@emotion/react": "^11.1.4",
+    "formik": "^2.2.6",
     "next": "10.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-map-gl": "^6.0.2"
+    "react-map-gl": "^6.0.2",
+    "yup": "^0.32.8"
   }
 }

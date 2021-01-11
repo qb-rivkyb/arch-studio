@@ -2,6 +2,7 @@ import SideText from "../components/Layout/Header/SideText";
 import Layout from "../components/Layout";
 import OverlappingHero from "../components/OverlappingHero";
 import ContactDetails from "../components/ContactDetails";
+import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
   return (
@@ -29,7 +30,9 @@ export default function Contact() {
           />
         </div>
         <ContactDetails />
-        <div>contact form</div>
+        <div css={{ "@media (max-width: 426px)": { margin: "0 32px" } }}>
+          <ContactForm />
+        </div>
       </Layout>
     </>
   );

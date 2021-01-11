@@ -14,7 +14,9 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <style global jsx>{`
         body,
-        html {
+        html,
+        input,
+        button {
           font-family: "Spartan", sans-serif;
           margin: 0;
           padding: 0;
