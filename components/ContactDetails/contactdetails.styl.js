@@ -25,7 +25,6 @@ export const contactDetailsContainer = {
 export const contactDetailsText = {
   marginTop: 0,
   maxWidth: "30%",
-  "@media (max-width: 426px)": { fontSize: "40px" },
   "&:before": {
     content: '""',
     borderTop: `1px solid ${colors.lightGrey}`,

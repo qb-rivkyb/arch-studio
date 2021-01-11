@@ -20,7 +20,7 @@ const H2 = ({ children, className }) => (
       fontSize: "56px",
       lineHeight: "1em",
       fontWeight: "700",
-      "@media:(max-width: 425px)": { fontSize: "40px" },
+      "@media(max-width: 425px)": { fontSize: "40px" },
     }}
     className={className}
   >

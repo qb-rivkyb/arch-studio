@@ -4,6 +4,7 @@ import Image from "next/image";
 import colors from "../../colors";
 import { H2 } from "../ui/textTypes";
 import * as s from "./contactform.styl";
+import Arrow from "../../public/icons/icon-arrow-white.jsx";
 
 export default function ContactForm() {
   return (
@@ -21,7 +22,7 @@ export default function ContactForm() {
         css={{
           marginBottom: "48px",
           "@media (min-width: 768px)": { maxWidth: "25%" },
-          "@media (max-width: 426px)": { fontSize: "40px", maxWidth: "75%" },
+          "@media (max-width: 426px)": { maxWidth: "75%" },
         }}
       >
         Connect with us
@@ -81,7 +82,7 @@ export default function ContactForm() {
             </span>
           </div>
           <button type="submit" css={s.submitButton}>
-            <Image src="/icons/icon-arrow-white.svg" width="26" height="20" />
+            <Arrow />
           </button>
         </Form>
       </Formik>

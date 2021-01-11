@@ -1,17 +1,12 @@
-import Image from "next/image";
+import Arrow from "../../../public/icons/icon-arrow-white.jsx";
 import * as s from "./arrowButton.styl";
 
-export default function ArrowButton({ children }) {
+export default function ArrowButton({ children, className }) {
   return (
-    <div css={s.button}>
+    <div css={s.button} className={className}>
       {children}
       <div css={{ marginLeft: "24px" }}>
-        <Image
-          src="/icons/icon-arrow-white.svg"
-          alt="icon arrow"
-          width={24}
-          height={18}
-        />
+        <Arrow width={24} height={18} />
       </div>
     </div>
   );

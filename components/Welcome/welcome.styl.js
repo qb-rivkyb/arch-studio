@@ -9,7 +9,6 @@ export const headerText = {
 
 export const subHeaderText = {
   marginTop: 0,
-  fontSize: "40px",
   "@media(min-width:768px)": {
     maxWidth: "50%",
   },
