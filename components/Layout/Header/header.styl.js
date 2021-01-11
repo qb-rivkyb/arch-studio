@@ -8,11 +8,11 @@ export const navigation = {
   alignItems: "center",
   position: "relative",
   zIndex: 1000,
+  background: "white",
   "@media (max-width: 426px)": {
     padding: "32px",
     justifyContent: "space-between",
     position: "relative",
-    zIndex: 1000,
   },
 };
 export const logo = {
@@ -52,7 +52,7 @@ export const navItemsMobile = {
   justifyContent: "space-evenly",
   alignItems: "flex-start",
   paddingLeft: "48px",
-  zIndex: "1000",
+  zIndex: 1000,
   "@media (min-width: 426px)": {
     display: "none",
   },
@@ -70,9 +70,7 @@ export const overlay = {
   bottom: 0,
   top: 0,
   right: 0,
-  zIndex: 1,
-  width: "100%",
-  height: "100%",
+  zIndex: 10,
   "@media (min-width: 426px)": {
     display: "none",
   },
