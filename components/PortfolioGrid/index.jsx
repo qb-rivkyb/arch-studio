@@ -15,7 +15,7 @@ export default function PortfolioGrid({ imgs }) {
       }}
     >
       {imgs.map((img) => {
-        return <PortfolioImage img={img} key={img.url} />;
+        return <PortfolioImage img={img} key={img.name} />;
       })}
     </div>
   );
