@@ -39,9 +39,9 @@ export default function ContactForm() {
             .max(100, "Must be less than 100 characters")
             .required("Can't be empty"),
         })}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={({ setSubmitting }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+            alert("Your form has been submitted successfully");
             setSubmitting(false);
           }, 400);
         }}

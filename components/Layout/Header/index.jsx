@@ -16,6 +16,8 @@ export default function Header() {
 
   return (
     <>
+      {toggleMenu && <div css={s.overlay} onClick={handleToggle}></div>}
+      {toggleMenu && <MobileNav onClick={handleToggle} />}
       <div css={s.navigation}>
         <NextLink href="/" passHref>
           <a css={s.logo}>
@@ -42,7 +44,6 @@ export default function Header() {
             />
           )}
         </div>
-        {toggleMenu && <MobileNav onClick={handleToggle} />}
         <div css={s.navItems}>
           <NavLink href="/portfolio">Portfolio</NavLink>
           <NavLink href="/about">About Us</NavLink>
