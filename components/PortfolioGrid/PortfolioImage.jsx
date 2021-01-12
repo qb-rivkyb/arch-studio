@@ -9,11 +9,11 @@ export default function PortfolioImage({ img }) {
         <picture>
           <source
             media="(min-width:1024px)"
-            srcset={`/portfolio/desktop/${img.name}`}
+            srcSet={`/portfolio/desktop/${img.name}`}
           />
           <source
             media="(min-width:426px)"
-            srcset={`/portfolio/tablet/${img.name}`}
+            srcSet={`/portfolio/tablet/${img.name}`}
           />
           <img
             src={`/portfolio/mobile/${img.name}`}
