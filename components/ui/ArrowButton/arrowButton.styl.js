@@ -15,9 +15,13 @@ export const button = {
   letterSpacing: ".04em",
   cursor: "pointer",
   lineHeight: 0,
-  "&:hover": {
-    backgroundColor: colors.darkGrey,
+
+  "@media (min-width: 1024px)": {
+    "&:hover": {
+      backgroundColor: colors.darkGrey,
+    },
   },
+
   "&:active": {
     backgroundColor: colors.lightGrey,
   },
