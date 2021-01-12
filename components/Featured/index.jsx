@@ -22,7 +22,7 @@ export default function Featured({ imgs }) {
       </div>
       <div css={s.imgContainer}>
         {imgs.map((img) => {
-          return <PortfolioImage img={img} key={img.url} />;
+          return <PortfolioImage img={img} key={img.name} />;
         })}
       </div>
     </div>
