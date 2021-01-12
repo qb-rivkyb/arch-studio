@@ -5,13 +5,6 @@ export const featuredContainer = {
   justifyContent: "space-between",
 };
 
-export const seeAllButton = {
-  "@media (max-width: 480px)": {
-    order: 1,
-    marginTop: "24px",
-  },
-};
-
 export const featuredText = {
   "@media (max-width: 540px)": { fontSize: "40px" },
 };
@@ -20,6 +13,8 @@ export const arrowButton = {
   "@media (max-width: 480px)": {
     width: "100%",
     justifyContent: "center",
+    order: 1,
+    marginTop: "24px",
   },
 };
 

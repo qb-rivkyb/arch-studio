@@ -3,7 +3,6 @@ import BannerButton from "./BannerButton";
 import ArrowButton from "../ui/ArrowButton";
 import * as s from "./banner.styl";
 import { H1, P } from "../ui/textTypes";
-import Link from "../ui/Link";
 
 export default function Banner() {
   const images = [
@@ -46,9 +45,7 @@ export default function Banner() {
           {currentImg.header}
         </H1>
         <P css={{ color: "white" }}>{currentImg.description}</P>
-        <Link href="/portfolio">
-          <ArrowButton>See our portfolio</ArrowButton>
-        </Link>
+        <ArrowButton href="/portfolio">See our portfolio</ArrowButton>
       </div>
       <div css={s.buttonContainer}>
         {images.map((img, index) => (

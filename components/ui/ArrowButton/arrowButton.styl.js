@@ -4,7 +4,7 @@ export const button = {
   height: "72px",
   backgroundColor: colors.darkBlue,
   color: "white",
-  border: "none",
+  textDecoration: "none",
   fontSize: "15px",
   textTransform: "capitalize",
   display: "inline-flex",
@@ -13,7 +13,6 @@ export const button = {
   padding: "24px 32px",
   fontWeight: "bold",
   letterSpacing: ".04em",
-  cursor: "pointer",
   lineHeight: 0,
 
   "@media (min-width: 1024px)": {

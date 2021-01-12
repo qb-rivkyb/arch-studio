@@ -1,5 +1,4 @@
 import ArrowButton from "../ui/ArrowButton";
-import Link from "../ui/Link";
 import { H2 } from "../ui/textTypes";
 
 export default function AboutUs() {
@@ -50,9 +49,7 @@ export default function AboutUs() {
           }}
         >
           <H2 css={{ color: "white" }}>Small team, big ideas</H2>
-          <Link href="/about">
-            <ArrowButton>About Us</ArrowButton>
-          </Link>
+          <ArrowButton href="/about">About Us</ArrowButton>
         </div>
       </div>
     </>

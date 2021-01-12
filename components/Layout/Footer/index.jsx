@@ -14,9 +14,9 @@ export default function Footer() {
         <Link href="/about">About Us</Link>
         <Link href="/contact">Contact</Link>
       </div>
-      <Link css={s.button} href="/portfolio">
-        <ArrowButton>see our portfolio</ArrowButton>
-      </Link>
+      <ArrowButton css={s.button} href="/portfolio">
+        see our portfolio
+      </ArrowButton>
     </div>
   );
 }

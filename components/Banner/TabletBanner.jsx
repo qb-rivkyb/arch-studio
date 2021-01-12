@@ -1,5 +1,4 @@
 import ArrowButton from "../ui/ArrowButton";
-import Link from "../ui/Link";
 import * as s from "./banner.styl";
 import { H1, P } from "../ui/textTypes";
 
@@ -74,9 +73,9 @@ export default function Banner() {
                 {image.header}
               </span>
               <P css={{ color: "white" }}>{image.description}</P>
-              <Link href="/portfolio" css={{ width: "265px" }}>
-                <ArrowButton>see our portfolio</ArrowButton>
-              </Link>
+              <ArrowButton href="/portfolio" css={{ width: "265px" }}>
+                see our portfolio
+              </ArrowButton>
             </div>
           </div>
         </div>
