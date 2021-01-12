@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import SideText from "../components/Layout/Header/SideText";
 import Welcome from "../components/Welcome";
 import Featured from "../components/Featured";
+import AboutUs from "../components/AboutUs";
 
 export default function IndexPage() {
   return (
@@ -14,7 +15,7 @@ export default function IndexPage() {
       <MobileBanner />
       <TabletBanner />
       <Welcome />
-      <div>Link to About us</div>
+      <AboutUs />
       <Featured
         imgs={[
           { name: "image-del-sol.jpg", header: "Project Del Sol", number: 1 },
