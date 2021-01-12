@@ -51,9 +51,9 @@ export default function PortfolioImage({ img }) {
         </div>
       )}
       <div>
-        <H3 css={{ color: "white", marginBottom: "2px" }}>{img.header}</H3>
+        <H3 css={{ color: "white", marginBottom: "4px" }}>{img.header}</H3>
         {img.date ? (
-          <p css={{ color: "white" }}>{img.date}</p>
+          <p css={{ color: "white", margin: 0 }}>{img.date}</p>
         ) : (
           <NextLink href="/portfolio" passHref>
             <a css={{ color: "white", textDecoration: "none" }}>
