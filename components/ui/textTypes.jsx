@@ -43,6 +43,9 @@ const LargeGreyText = ({ children, className }) => (
       fontSize: "200px",
       color: colors.veryLightGrey,
       fontWeight: "700",
+      "@media(max-width:1330px)": {
+        fontSize: "150px",
+      },
       "@media(max-width:1100px)": {
         fontSize: "120px",
       },

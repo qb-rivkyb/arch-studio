@@ -9,12 +9,7 @@ export const headerText = {
 
 export const subHeaderText = {
   marginTop: 0,
-  "@media(min-width:768px)": {
-    maxWidth: "50%",
-  },
-  "@media(min-width:1100px)": {
-    maxWidth: "80%",
-  },
+  maxWidth: "446px",
 };
 
 export const welcomeContainer = {
@@ -36,15 +31,18 @@ export const welcomeContainer = {
 };
 
 export const body = {
-  "@media(min-width:1100px)": {
+  "@media(min-width:1150px)": {
     width: "446px",
     marginLeft: "185px",
+  },
+  "@media(max-width:1330px)": {
+    marginLeft: 0,
   },
 };
 
 export const image = {
   display: "none",
-  "@media(min-width:1100px)": {
+  "@media(min-width:1150px)": {
     display: "block",
     position: "absolute",
     top: 120,
