@@ -16,7 +16,8 @@ function MyApp({ Component, pageProps }) {
         body,
         html,
         input,
-        button {
+        button,
+        textarea {
           font-family: "Spartan", sans-serif;
           margin: 0;
           padding: 0;
