@@ -16,9 +16,11 @@ export default function AboutUs() {
           display: "flex",
           alignItems: "center",
           paddingLeft: "32px",
+          margin: "72px auto",
           "@media (min-width: 768px)": {
             backgroundImage: "url(/home/tablet/image-small-team.jpg)",
             paddingLeft: "58px",
+            margin: "200px auto",
           },
           "@media (min-width: 1024px)": {
             backgroundImage: "url(/home/desktop/image-small-team.jpg)",
