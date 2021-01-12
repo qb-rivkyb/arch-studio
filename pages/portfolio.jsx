@@ -33,13 +33,43 @@ const images = [
     date: "January 2016",
   },
   {
+    name: "image-prototype.jpg",
+    header: "Le Prototype",
+    date: "April 2015",
+  },
+  {
     name: "image-228b.jpg",
     header: "228B Tower",
     date: "April 2015",
   },
   {
-    name: "image-prototype.jpg",
-    header: "228B Tower",
+    name: "image-edelweiss.jpg",
+    header: "Grand Edelweiss Hotel",
+    date: "April 2015",
+  },
+  {
+    name: "image-netcry.jpg",
+    header: "Netcry Tower",
+    date: "April 2015",
+  },
+  {
+    name: "image-hypers.jpg",
+    header: "Hypers",
+    date: "April 2015",
+  },
+  {
+    name: "image-sxiv.jpg",
+    header: "SXIV Tower",
+    date: "April 2015",
+  },
+  {
+    name: "image-trinity.jpg",
+    header: "Trinity Bank Tower",
+    date: "April 2015",
+  },
+  {
+    name: "image-paramour.jpg",
+    header: "Project Paramour",
     date: "April 2015",
   },
 ];
