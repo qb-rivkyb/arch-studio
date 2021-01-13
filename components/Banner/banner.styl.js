@@ -12,6 +12,17 @@ export const banner = {
   },
 };
 
+export const bannerOverlay = {
+  "&:before": {
+    content: "''",
+    position: "absolute",
+    opacity: 0.1,
+    backgroundColor: "black",
+    width: "100%",
+    height: "100%",
+  },
+};
+
 export const bannerButton = {
   height: "80px",
   width: "80px",
@@ -49,4 +60,5 @@ export const buttonContainer = {
 export const textContainer = {
   maxWidth: "445px",
   marginLeft: "190px",
+  position: "relative",
 };

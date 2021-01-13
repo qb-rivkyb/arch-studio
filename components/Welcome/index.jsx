@@ -27,7 +27,12 @@ export default function Welcome() {
         </P>
       </div>
       <div css={s.image}>
-        <Image src="/home/desktop/image-welcome.jpg" width="350" height="568" />
+        <Image
+          src="/home/desktop/image-welcome.jpg"
+          width="350"
+          height="568"
+          alt="welcome-image"
+        />
       </div>
     </div>
   );

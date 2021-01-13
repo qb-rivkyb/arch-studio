@@ -39,7 +39,13 @@ export default function Banner() {
   };
 
   return (
-    <div css={[s.banner, { backgroundImage: `url(${currentImg.url})` }]}>
+    <div
+      css={[
+        s.banner,
+        s.bannerOverlay,
+        { backgroundImage: `url(${currentImg.url})` },
+      ]}
+    >
       <div css={s.textContainer}>
         <H1 css={{ color: "white", marginBottom: "14px" }}>
           {currentImg.header}
