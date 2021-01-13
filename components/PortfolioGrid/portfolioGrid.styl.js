@@ -14,6 +14,7 @@ export const overlay = {
         opacity: 0.5,
         backgroundColor: "white",
         cursor: "pointer",
+        transition: "0.3s ease-out",
       },
     },
   },
