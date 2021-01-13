@@ -28,13 +28,17 @@ export default function OverlappingHero({
           css={{
             textTransform: "capitalize",
             display: "none",
+
             "@media (min-width: 768px) ": {
               display: "block",
               marginBottom: "-65px",
             },
             "@media (min-width: 1024px) ": {
-              marginBottom: "-115px",
-              // fontSize: "200px",
+              position: "absolute",
+              top: "-100px",
+              fontSize: "180px",
+              top: "-65px",
+              right: "-45px",
             },
           }}
         >

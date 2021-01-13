@@ -11,7 +11,7 @@ export default function ContactForm() {
     <div
       css={{
         marginTop: "72px",
-        "@media (min-width: 768px)": {
+        "@media (min-width: 1024px)": {
           marginTop: "200px",
           display: "flex",
           justifyContent: "space-between",
@@ -21,7 +21,7 @@ export default function ContactForm() {
       <H2
         css={{
           marginBottom: "48px",
-          "@media (min-width: 768px)": { maxWidth: "25%" },
+          marginTop: "0px",
           "@media (max-width: 426px)": { maxWidth: "75%" },
         }}
       >
@@ -77,7 +77,7 @@ export default function ContactForm() {
                 <ErrorMessage name="email" />
               </span>
             </div>
-            <div css={{ position: "relative" }}>
+            <div css={{ position: "relative", lineHeight: 0 }}>
               <Field
                 name="message"
                 component="textarea"
@@ -85,7 +85,7 @@ export default function ContactForm() {
                 placeholder="message"
                 value={values.message}
                 onChange={handleChange}
-                css={[s.textInput, { height: "134px", marginTop: "10px" }]}
+                css={[s.textInput, { height: "134px", marginTop: "15px" }]}
               />
               <span css={s.errorMessage}>
                 <ErrorMessage name="message" />

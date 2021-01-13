@@ -7,7 +7,7 @@ export const contactContainer = {
     alignItems: "center",
     justifyContent: "space-between",
   },
-  "@media (min-width: 900px)": { display: "block", marginRight: "30px" },
+  "@media (min-width: 900px)": { display: "block" },
 };
 
 export const contactDetailsContainer = {

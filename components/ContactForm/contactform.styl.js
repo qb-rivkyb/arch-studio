@@ -2,7 +2,7 @@ import colors from "../../colors";
 
 export const form = {
   width: "100%",
-  "@media (min-width: 768px)": {
+  "@media (min-width: 1024px)": {
     width: "730px",
   },
 };
