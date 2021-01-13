@@ -16,7 +16,7 @@ export const bannerOverlay = {
   "&:before": {
     content: "''",
     position: "absolute",
-    opacity: 0.1,
+    opacity: 0.4,
     backgroundColor: "black",
     width: "100%",
     height: "100%",
