@@ -21,6 +21,7 @@ export const textInput = {
   "&::placeholder": {
     color: colors.lightGrey,
     textTransform: "capitalize",
+    fontWeight: "600",
   },
 };
 
@@ -28,9 +29,9 @@ export const errorMessage = {
   color: "red",
   position: "absolute",
   right: 0,
-  zIndex: 1,
-  bottom: "20px",
+  bottom: "15px",
   fontSize: "15px",
+  fontWeight: "600",
 };
 
 export const submitButton = {
@@ -43,8 +44,10 @@ export const submitButton = {
   border: "none",
   marginLeft: "auto",
   cursor: "pointer",
-  "&:hover": {
-    backgroundColor: colors.darkGrey,
+  "@media (min-width: 1024px)": {
+    "&:hover": {
+      backgroundColor: colors.darkGrey,
+    },
   },
   "&:focus": {
     outline: "none",

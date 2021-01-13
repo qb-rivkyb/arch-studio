@@ -1,5 +1,4 @@
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import { useState } from "react";
 import * as Yup from "yup";
 import { H2 } from "../ui/textTypes";
 import * as s from "./contactform.styl";
@@ -11,8 +10,10 @@ export default function ContactForm() {
     <div
       css={{
         marginTop: "72px",
-        "@media (min-width: 1024px)": {
+        "@media (min-width: 768px)": {
           marginTop: "200px",
+        },
+        "@media (min-width: 1024px)": {
           display: "flex",
           justifyContent: "space-between",
         },
@@ -20,9 +21,12 @@ export default function ContactForm() {
     >
       <H2
         css={{
-          marginBottom: "48px",
+          marginBottom: "64px",
           marginTop: "0px",
-          "@media (max-width: 426px)": { maxWidth: "75%" },
+          "@media (max-width: 426px)": {
+            maxWidth: "75%",
+            marginBottom: "48px",
+          },
         }}
       >
         Connect with us
