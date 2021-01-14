@@ -42,7 +42,7 @@ export default function OurHeritage() {
           Speciliazing in Urban Design allowed us to focus on creating
           exceptional structures that live in harmony with their surroundings.
           We consider every detail from every surrounding element to inform our
-          designs.{" "}
+          designs.
         </P>
         <P>
           Our small team of world-class professionals provides input on every

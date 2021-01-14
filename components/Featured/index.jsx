@@ -3,7 +3,7 @@ import ArrowButton from "../ui/ArrowButton";
 import { H2 } from "../ui/textTypes";
 import * as s from "./featured.styl.js";
 
-export default function Featured({ imgs }) {
+export default function Featured({ data }) {
   return (
     <div css={s.featuredContainer}>
       <div css={s.heading}>
@@ -13,9 +13,9 @@ export default function Featured({ imgs }) {
         </ArrowButton>
       </div>
       <div css={s.imgContainer}>
-        {imgs.map((img) => {
-          return <PortfolioImage img={img} key={img.name} />;
-        })}
+        {data.map((d) => (
+          <PortfolioImage data={d} key={d.header} />
+        ))}
       </div>
     </div>
   );

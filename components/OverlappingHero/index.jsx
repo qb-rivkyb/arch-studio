@@ -2,8 +2,8 @@ import { H2, LargeGreyText, P } from "../ui/textTypes";
 import * as s from "./overlappinghero.styl";
 
 export default function OverlappingHero({
-  imageName,
-  page,
+  imageSrc,
+  headerText,
   subHeaderText,
   paragraphText,
 }) {
@@ -11,14 +11,14 @@ export default function OverlappingHero({
     <div css={s.container}>
       <div
         css={{
-          background: `url(/${page}/mobile/${imageName}) no-repeat`,
+          background: `url(${imageSrc.mobile}) no-repeat`,
           height: "240px",
           "@media (min-width: 426px)": {
-            background: `url(/${page}/tablet/${imageName}) no-repeat`,
+            background: `url(${imageSrc.tablet}) no-repeat`,
             height: "720px",
           },
           "@media (min-width: 1024px)": {
-            background: `url(/${page}/desktop/${imageName}) no-repeat`,
+            background: `url(${imageSrc.desktop}) no-repeat`,
             height: "720px",
           },
         }}
@@ -42,7 +42,7 @@ export default function OverlappingHero({
             },
           }}
         >
-          {page}
+          {headerText}
         </LargeGreyText>
         <div css={s.subTextContainer}>
           <H2>{subHeaderText}</H2>

@@ -1,11 +1,11 @@
 import PortfolioImage from "./PortfolioImage";
 import * as s from "./portfolioGrid.styl";
 
-export default function PortfolioGrid({ imgs }) {
+export default function PortfolioGrid({ data }) {
   return (
     <div css={s.grid}>
-      {imgs.map((img) => {
-        return <PortfolioImage img={img} key={img.name} />;
+      {data.map((d) => {
+        return <PortfolioImage data={d} key={d.header} />;
       })}
     </div>
   );

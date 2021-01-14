@@ -42,8 +42,9 @@ export default function ContactDetails() {
           <ViewMapButton onClick={() => viewOnMapClick(31.9686, -99.9018)} />
         </div>
       </div>
-      <div css={{height: '500px'}}>
-      <Map latitude={location.latitude} longitude={location.longitude} /></div>
+      <div css={{ height: "500px" }}>
+        <Map latitude={location.latitude} longitude={location.longitude} />
+      </div>
     </>
   );
 }
