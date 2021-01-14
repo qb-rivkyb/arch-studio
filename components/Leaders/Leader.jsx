@@ -8,7 +8,7 @@ export default function Leader({ imageUrl, name, title }) {
       <div css={s.overlayHover}>
         <Image src={imageUrl} height="320" width="350" alt="leader-image" />
         <div css={s.overlay}>
-          <div css={s.socialImages}>
+          <div>
             <span css={{ marginRight: "32px" }}>
               <Image
                 src="/icons/icon-linkedin-white.svg"

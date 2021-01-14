@@ -1,46 +1,46 @@
 import colors from "../../../colors";
 
 export const container = {
+  alignItems: "center",
   background: `linear-gradient(to top, ${colors.veryLightGrey} 0%,${colors.veryLightGrey} 85%,${colors.veryLightGrey} 50%,white 50%,white 100%)`,
   display: "flex",
   flexDirection: "column",
-  alignItems: "center",
   height: "443px",
   justifyContent: "space-between",
-  paddingBottom: "48px",
   marginTop: "72px",
+  paddingBottom: "48px",
   "@media(min-width:768px)": {
-    marginTop: "200px",
+    background: `linear-gradient(to right, ${colors.veryLightGrey} 0%,${colors.veryLightGrey} 80%,${colors.veryLightGrey} 50%,white 50%,white 100%)`,
     flexDirection: "row",
     height: "120px",
+    marginTop: "200px",
     paddingBottom: 0,
-    background: `linear-gradient(to right, ${colors.veryLightGrey} 0%,${colors.veryLightGrey} 80%,${colors.veryLightGrey} 50%,white 50%,white 100%)`,
   },
   "@media(min-width:1200px)": {
-    maxWidth: "1440px",
-    padding: "0 165px",
-    margin: "200px auto 0",
     background: `linear-gradient(to right, ${colors.veryLightGrey} 0%,${colors.veryLightGrey} 90%,${colors.veryLightGrey} 50%,white 50%,white 100%) no-repeat`,
     backgroundOrigin: "content-box",
     height: "200px",
     justifyContent: "flex-start",
+    margin: "200px auto 0",
+    maxWidth: "1440px",
+    padding: "0 165px",
   },
 };
 
 export const linkContainer = {
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-evenly",
   height: "100%",
+  justifyContent: "space-evenly",
   "@media(min-width:768px)": {
-    flexDirection: "row",
     alignItems: "center",
+    flexDirection: "row",
     flexGrow: 1,
   },
   "@media(min-width:1200px)": {
-    maxWidth: "316px",
-    marginLeft: "5%",
     justifyContent: "space-between",
+    marginLeft: "5%",
+    maxWidth: "316px",
   },
 };
 export const button = {
@@ -51,10 +51,10 @@ export const button = {
 
 export const logoContainer = {
   backgroundColor: colors.darkBlue,
-  height: "120px",
-  width: "120px",
   display: "flex",
+  height: "120px",
   justifyContent: "center",
+  width: "120px",
   "@media(min-width:1200px)": {
     height: "200px",
     width: "200px",

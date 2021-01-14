@@ -11,15 +11,17 @@ export default function OverlappingHero({
     <div css={s.container}>
       <div
         css={{
-          background: `url(${imageSrc.mobile}) no-repeat`,
+          backgroundImage: `url(${imageSrc.mobile})`,
+          backgroundRepeat: "no-repeat",
           height: "240px",
+          backgroundSize: "cover",
           "@media (min-width: 426px)": {
-            background: `url(${imageSrc.tablet}) no-repeat`,
+            backgroundImage: `url(${imageSrc.tablet})`,
             height: "720px",
           },
           "@media (min-width: 1024px)": {
-            background: `url(${imageSrc.desktop}) no-repeat`,
-            height: "720px",
+            backgroundImage: `url(${imageSrc.desktop})`,
+            backgroundSize: "contain",
           },
         }}
       ></div>
@@ -27,6 +29,7 @@ export default function OverlappingHero({
         <LargeGreyText
           css={{
             textTransform: "capitalize",
+            textAlign: "right",
             display: "none",
 
             "@media (min-width: 768px) ": {
@@ -34,11 +37,10 @@ export default function OverlappingHero({
               marginBottom: "-65px",
             },
             "@media (min-width: 1024px) ": {
-              position: "absolute",
-              top: "-100px",
               fontSize: "180px",
-              top: "-65px",
+              position: "absolute",
               right: "-45px",
+              top: "-100px",
             },
           }}
         >

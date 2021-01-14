@@ -6,16 +6,16 @@ export default function AboutUs() {
     <>
       <div
         css={{
+          alignItems: "center",
           backgroundImage: "url(/home/mobile/image-small-team.jpg)",
           backgroundRepeat: "no-repeat",
-          width: "100%",
-          height: "560px",
           backgroundSize: "cover",
-          position: "relative",
           display: "flex",
-          alignItems: "center",
-          paddingLeft: "32px",
+          height: "560px",
           margin: "72px auto",
+          paddingLeft: "32px",
+          position: "relative",
+          width: "100%",
           "@media (min-width: 768px)": {
             backgroundImage: "url(/home/tablet/image-small-team.jpg)",
             paddingLeft: "58px",

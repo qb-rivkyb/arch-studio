@@ -28,8 +28,7 @@ export const imgsContainer = {
 };
 
 export const titleText = {
-  color: colors.darkBlue,
-  opacity: ".75",
+  color: "#696969",
   margin: "4px 0px 8px",
 };
 
@@ -45,26 +44,21 @@ export const overlayHover = {
   maxHeight: "320px",
   "@media (min-width: 1100px)": {
     "&:hover > div": {
-      opacity: "0.5",
+      opacity: "1",
     },
   },
 };
 
 export const overlay = {
-  position: "absolute",
-  opacity: 0,
-  backgroundColor: "black",
-  transition: "0.4s ease-out",
-  top: 0,
+  alignItems: "center",
+  backgroundColor: "rgba(0,0,0,0.5)",
   bottom: 0,
-  right: 0,
+  display: "flex",
+  justifyContent: "center",
   left: 0,
-};
-
-export const socialImages = {
-  textAlign: "center",
+  opacity: 0,
   position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translateX(-50%) translateY(-50%)",
+  right: 0,
+  top: 0,
+  transition: "0.4s ease-out",
 };

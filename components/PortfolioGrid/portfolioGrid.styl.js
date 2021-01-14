@@ -3,16 +3,14 @@ export const overlay = {
   "&:before": {
     content: "''",
     position: "absolute",
-    opacity: 0.1,
-    backgroundColor: "black",
+    backgroundColor: "rgba(0,0,0,0.1)",
     width: "100%",
     height: "100%",
   },
   "@media (min-width: 1024px)": {
     "&:hover": {
       "&:before": {
-        opacity: 0.5,
-        backgroundColor: "white",
+        backgroundColor: "rgba(255,255,255,.3)",
         cursor: "pointer",
         transition: "0.3s ease-out",
       },
@@ -22,9 +20,8 @@ export const overlay = {
 
 export const imgNumber = {
   fontSize: "200px",
-  color: "white",
+  color: "rgba(255,255,255,.5)",
   fontWeight: "bold",
-  opacity: ".5",
   position: "absolute",
   right: "16px",
   top: "10px",

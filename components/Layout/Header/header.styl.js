@@ -1,14 +1,13 @@
 import colors from "../../../colors";
 
 export const navigation = {
-  display: "flex",
-  paddingTop: "56px",
-  paddingBottom: "56px",
-  textAlign: "center",
   alignItems: "center",
+  background: "white",
+  display: "flex",
+  paddingBottom: "56px",
+  paddingTop: "56px",
   position: "relative",
   zIndex: 1000,
-  background: "white",
   "@media (max-width: 426px)": {
     padding: "32px",
     justifyContent: "space-between",
@@ -30,28 +29,32 @@ export const navItems = {
 
 export const linkActiveStyles = {
   color: colors.darkBlue,
+  position: "relative",
   "&::after": {
+    borderBottom: `1px solid ${colors.darkBlue}`,
     content: '" "',
     display: "block",
     margin: "0 auto",
-    width: "50%",
     paddingTop: "7px",
-    borderBottom: `1px solid ${colors.darkBlue}`,
+    position: "absolute",
+    width: "50%",
+    left: "50%",
+    transform: "translateX(-50%)",
   },
 };
 
 export const navItemsMobile = {
+  alignItems: "flex-start",
   backgroundColor: colors.veryLightGrey,
-  position: "absolute",
-  top: "108px",
-  width: "343px",
-  height: "235px",
-  right: 0,
   display: "flex",
   flexDirection: "column",
+  height: "235px",
   justifyContent: "space-evenly",
-  alignItems: "flex-start",
   paddingLeft: "48px",
+  position: "absolute",
+  right: 0,
+  top: "108px",
+  width: "343px",
   zIndex: 1000,
   "@media (min-width: 426px)": {
     display: "none",

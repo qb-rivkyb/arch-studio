@@ -1,12 +1,12 @@
 import colors from "../../colors";
 
 export const banner = {
-  backgroundRepeat: "no-repeat",
-  height: "720px",
-  width: "100%",
-  position: "relative",
-  display: "flex",
   alignItems: "center",
+  backgroundRepeat: "no-repeat",
+  display: "flex",
+  height: "720px",
+  position: "relative",
+  width: "100%",
   "@media(max-width: 900px)": {
     display: "none",
   },
@@ -14,27 +14,26 @@ export const banner = {
 
 export const bannerOverlay = {
   "&:before": {
+    backgroundColor: "rgba(0,0,0,.4)",
     content: "''",
-    position: "absolute",
-    opacity: 0.4,
-    backgroundColor: "black",
-    width: "100%",
     height: "100%",
+    position: "absolute",
+    width: "100%",
   },
 };
 
 export const bannerButton = {
-  height: "80px",
-  width: "80px",
+  alignItems: "center",
   backgroundColor: "white",
-  color: colors.mediumGrey,
   border: "none",
+  color: colors.mediumGrey,
+  cursor: "pointer",
+  display: "flex",
   fontSize: "15px",
   fontWeight: "bold",
-  display: "flex",
+  height: "80px",
   justifyContent: "center",
-  alignItems: "center",
-  cursor: "pointer",
+  width: "80px",
   "&:hover": {
     backgroundColor: colors.veryLightGrey,
   },
@@ -43,11 +42,6 @@ export const bannerButton = {
 export const activeButton = {
   backgroundColor: colors.darkBlue,
   color: "white",
-};
-
-export const imageContainer = {
-  height: "720px",
-  width: "1100px",
 };
 
 export const buttonContainer = {
